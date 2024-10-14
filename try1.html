@@ -1,0 +1,14 @@
+window.addEventListener("scroll", function(){
+        
+  const endOfPage = window.innerHeight + window.pageYOffset >= document.body.scrollHeight;
+  
+  console.log(window.innerHeight, window.pageYOffset, document.body.scrollHeight)
+  // console.log(currentPage, lastPage)
+  if(endOfPage && currentPage < lastPage)
+  {
+      currentPage = currentPage + 1
+      getPosts(false, currentPage)
+      
+  }
+
+});

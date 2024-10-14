@@ -1,0 +1,93 @@
+:root{
+  --main-color: rgb(218, 188, 143);
+  --display: flex;
+  --position: relative;
+  --centering: center;
+
+
+}
+
+
+body{
+  background: linear-gradient(10deg, rgb(245, 147, 0), rgba(0, 0, 0, 0.212), rgb(255, 209, 109));
+  
+}
+.container{
+  display: var(--display);
+  position: var(--position);
+  justify-items: var(--centering);
+  margin: 10% auto;
+  padding: 30px 0 70px 0;
+  /* background-color: rgb(240, 207, 159); */
+  background-color: var(--main-color);
+  width: 30%;
+  border-radius: 20px;
+  text-align: var(--centering);
+  filter: blur(2px);
+  opacity: 0.5;
+  transition: 0.5s;
+  box-shadow: 2px 20px 20px rgb(65, 47, 16);
+}
+.container:hover{
+  filter: blur(0px);
+
+
+  /* background-color: rgb(218, 188, 143); */
+  background-color: transparent;
+
+  opacity: 1;
+  transition: 1s;
+
+}
+.form{
+  display: var(--display);
+  position: var(--position);
+  align-items: var(--centering);
+  margin: 0 auto;
+
+}
+h2{
+  display: var(--display);
+  position: var(--position);
+  justify-content: var(--centering);
+  margin: 0 auto 40px auto;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: normal;
+
+}
+.input{
+  background-color: rgba(0, 0, 0, 0.205);
+  border: none;
+  padding-bottom: 10px;
+  border-radius: 4px;
+
+}
+.input1{
+  margin-top: -20px;
+
+}
+.input2{
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+}
+.login{
+  background-color: rgb(204, 143, 29) ;
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 1s;
+
+}
+.login:active{
+  background-color: rgb(143, 104, 25) ;
+  color: white;
+  transition: 0.3s;
+  
+
+}

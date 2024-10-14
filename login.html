@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleLogin.css" />
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- <h2>تسجيل الدخول</h2> -->
+
+    <div class="container">
+      <!-- لإعلام المتصفح أننا سنعرض نموذج في الصفحة <form> قمنا بوضع الوسم -->
+      <div class="form">
+        <form>
+          <h2>تسجيل الدخول</h2>
+
+          <h3 class="title">اسم المستخدم</h3>
+          <br />
+          <!-- حتى يظهر مكانه مربع لإدخال نص عادي "text" و تحديد أن نوعه <input> هنا قمنا بوضع الوسم -->
+          <div class="input1">
+            <input id="input1" class="input" type="text" /><br /><br />
+          </div>
+          <h3 class="title">كلمه السر</h3>
+          <br />
+          <!-- حتى يظهر مكانه مربع نص لإدخال كلمة مرور "password" و تحديد أن نوعه <input> هنا قمنا بوضع الوسم -->
+          <div class="input2">
+            <input id="input2" class="input" type="password" /><br /><br />
+          </div>
+
+          <!-- حتى يظهر مكانه زر "button" و تحديد أن نوعه <input> هنا قمنا بوضع الوسم -->
+          <button class="login" type="button" onclick="loginbuttonclick()"> تسجيل الدخول</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+  
+    const baseURL = "https://tarmeezacademy.com/api/v1"
+    function loginbuttonclick() {
+      console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+      let username = document.getElementById("input1").value;
+      let password = document.getElementById("input2").value;
+      const param = {
+        "username": username,
+        "password": password
+      };
+    
+      const url = `${baseURL}/login`;
+      axios.post(url, param)
+      .then((response) => {
+        console.log(response.data.token);
+        window.localStorage.setItem("toekn",response.data.token)
+        window.localStorage.setItem("usre", JSON.stringify(response.data.user))
+        
+
+
+      })
+      .catch((error) => {
+        console.error("حدث خطأ:", error);
+      });
+    }
+
+    
+  </script>
+</html>

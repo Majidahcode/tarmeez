@@ -1,0 +1,291 @@
+body{
+  background: linear-gradient(20deg, rgba(28, 112, 221, 0.39) ,rgba(7, 5, 2, 0.288));
+  width: 100%;
+  height: 100%;
+}
+/* MAIN CONTAINER */
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* SECUND CONTAINER */
+.contianer{
+  display: flex;
+  position: relative;
+  background: linear-gradient(20deg, rgb(87, 156, 235) ,rgb(247, 231, 206));
+  width: 70%;
+  height: 2000px;
+  border-radius: 10px;
+
+}
+
+/* START MAIN HEADER */
+.main-header{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  /* z-index: 100000; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* margin-top: 0; */
+  background-color: #00000027;
+  padding: 26px 0 26px 0;
+  box-shadow: 1px 10px 20px #0000002f;
+  transition: 1s;
+}
+.main-header:hover{
+  background-color: #03030377;
+
+  box-shadow: 1px 10px 30px #00000098;
+  
+}
+.links{
+  display: flex;
+  gap: 20px;
+  z-index: 10000000000000;
+}
+
+.links span{
+  font-weight: bolder;
+  font-size: 23px;
+  font-family: math;
+  background-image:linear-gradient(150deg,rgb(8, 97, 180),black) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.links a{
+  all: unset;
+  font-family: system-ui;
+  margin-top: 4px;
+  cursor:  pointer;
+    
+
+}
+
+.buttons button{
+  border: none;
+  background: linear-gradient(25deg, rgb(43, 93, 150), rgb(247, 231, 206));
+  border-radius: 10px;
+  padding: 6px 10px 6px 10px;
+  width: fit-content;
+  margin-left: 3px;
+  cursor:  pointer;
+}
+/* END MAIN HEADER */
+
+/* SRART MAIN CONTENT */
+.main-content{
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 100px  auto;
+  /* background-color: red; */
+  /* background: linear-gradient(20deg, rgb(87, 156, 235) ,rgb(247, 231, 206)); */
+  width: 70%;
+  height: 800px;
+  border-radius: 10px;
+  
+}
+
+.card{
+  width: 100%;
+  height: 75%;
+  background-color: #00000013;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+.header-card{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.card .avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.card .post-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 1.4);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.content{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  margin:-15px 100px 0 100px;
+}
+.content h6{
+  font-size: 12px;
+  color: #00000070;
+}
+.content h5{
+  margin-top: -10px;
+  font-size: 18px;
+  color: #000000;
+}
+.content p{
+  margin-top: -25px;
+  font-size: 14px;
+  color: #00000070;
+  letter-spacing: 0.6px;
+}
+/* END MAIN CONTENT */body{
+  background: linear-gradient(20deg, rgba(28, 112, 221, 0.39) ,rgba(7, 5, 2, 0.288));
+  width: 100%;
+  height: 100%;
+}
+/* MAIN CONTAINER */
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* SECUND CONTAINER */
+.contianer{
+  display: flex;
+  position: relative;
+  background: linear-gradient(20deg, rgb(87, 156, 235) ,rgb(247, 231, 206));
+  width: 70%;
+  height: 2000px;
+  border-radius: 10px;
+
+}
+
+/* START MAIN HEADER */
+.main-header{
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  /* z-index: 100000; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* margin-top: 0; */
+  background-color: #00000027;
+  padding: 26px 0 26px 0;
+  box-shadow: 1px 10px 20px #0000002f;
+  transition: 1s;
+}
+.main-header:hover{
+  background-color: #03030377;
+
+  box-shadow: 1px 10px 30px #00000098;
+  
+}
+.links{
+  display: flex;
+  gap: 20px;
+  z-index: 10000000000000;
+}
+
+.links span{
+  font-weight: bolder;
+  font-size: 23px;
+  font-family: math;
+  background-image:linear-gradient(150deg,rgb(8, 97, 180),black) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.links a{
+  all: unset;
+  font-family: system-ui;
+  margin-top: 4px;
+  cursor:  pointer;
+    
+
+}
+
+.buttons button{
+  border: none;
+  background: linear-gradient(25deg, rgb(43, 93, 150), rgb(247, 231, 206));
+  border-radius: 10px;
+  padding: 6px 10px 6px 10px;
+  width: fit-content;
+  margin-left: 3px;
+  cursor:  pointer;
+}
+/* END MAIN HEADER */
+
+/* SRART MAIN CONTENT */
+.main-content{
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 100px  auto;
+  /* background-color: red; */
+  /* background: linear-gradient(20deg, rgb(87, 156, 235) ,rgb(247, 231, 206)); */
+  width: 70%;
+  height: 800px;
+  border-radius: 10px;
+  
+}
+
+.card{
+  width: 100%;
+  height: 75%;
+  background-color: #00000013;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+.header-card{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.card .avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.card .post-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 1.4);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.content{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  margin:-15px 100px 0 100px;
+}
+.content h6{
+  font-size: 12px;
+  color: #00000070;
+}
+.content h5{
+  margin-top: -10px;
+  font-size: 18px;
+  color: #000000;
+}
+.content p{
+  margin-top: -25px;
+  font-size: 14px;
+  color: #00000070;
+  letter-spacing: 0.6px;
+}
+/* END MAIN CONTENT */
